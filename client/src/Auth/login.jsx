@@ -6,7 +6,7 @@ const login = () => {
   <div class='hidden lg:block w-1/2 h-screen relative'>
     <img src="https://wallpapercave.com/wp/wp10344365.jpg" class='w-full h-full object-cover' />
     <div class='absolute top-[20%] left-[10%] flex flex-col'>
-      <h1 class='text-4xl  text-white font-bold my-4'>Turn Your Ideas <br /> into reality</h1>
+      <h1 class='text-4xl lg:text-6xl  text-white font-bold my-4'>Turn Your Ideas <br /> into reality</h1>
       <p class='text-xl text-white font-normal'>Start for free and get attractive offers from the community</p>
     </div>
   </div>
@@ -23,12 +23,12 @@ const login = () => {
         <input
           type="email"
           placeholder='Email'
-          class='w-full text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
+          class='w-full bg-[#E8F0FE] text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
         />
         <input
           type="password"
           placeholder='Password'
-          class='w-full text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
+          class='w-full bg-[#E8F0FE] text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
         />
         <div class='w-full flex items-center justify-between'>
           <div class='w-full flex items-center'>
@@ -42,15 +42,15 @@ const login = () => {
           <button class='w-full text-[#060606]  my-2 border-2 border-black rounded-md p-3 lg:p-4 text-center items-center justify-center'>Signup</button>
         </div>
         <div class='w-full flex items-center justify-center relative py-2'>
-          <div class='w-full h-[1px] bg-black'></div>
-          <p class='text-lg lg:text-xl absolute text-[#060606]/80 bg-[#f5f5f5] p-1'>or</p>
+          <div class='w-full h-[1px] bg-black mt-6'></div>
+          <p class='text-lg lg:text-xl absolute text-[#060606]/80 bg-[#f5f5f5] p-1  '>or</p>
         </div>
         {/* <div className='w-full text-[#060606] flex my-2 mt-2 border-2 border-black rounded-md lg:p-4 text-center items-center justify-center'>
           <img src="https://e7.pngegg.com/pngimages/937/156/png-clipart-google-logo-google-search-google-account-redes-search-engine-optimization-text.png" className='h- mr-3' />
           Sign in with Google
         </div> */}
       </div>
-      <div class='w-full flex items-center justify-center'>
+      <div class='w-full flex items-center justify-center mt-8'>
         <p class='text-base  font-normal text-[#060606] p-2'>Don't have an account? <span class='font-semibold underline underline-offset-2 cursor-pointer'>Sign up for free!</span></p>
       </div>
     </div>
