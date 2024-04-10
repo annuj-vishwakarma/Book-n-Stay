@@ -2,57 +2,61 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const login = () => {
   return (
-    <div className='w-full h-screen flex items-start'>
-      <div className='relative w-1/2 h-full flex flex-col'>
-        <div className='absolute top-[20%] left-[10%] flex flex-col'>
-          <h1 className='text-4xl text-white font-bold my-4'>Turn Your Ideas <br /> into reality</h1>
-          <p className='text-xl text-white font-normal'>Start for free and get attactive offers from the community</p>
-        </div>
-        <img src="https://wallpapercave.com/wp/wp10344365.jpg" className='w-full h-full object-cover' />
-      </div>
-      <div className='w-1/2 h-full bg-[#f5f5f5] flex flex-col p-20 justify-between'>
-        <h1 className='text-xl text-[#060606] font-semibold'>Interactive brand</h1>
-
-        <div className='w-full flex flex-col'>
-          <div className='w-full flex flex-col mb-10'>
-            <h3 className='text-2xl font-semibold mb-4'>Login</h3>
-            <p className='text-sm mb-2'>Welcome back! please enter your details.</p>
-          </div>
-
-          <div className='w-full flex flex-col'>
-            <input
-              type="email"
-              placeholder='Email'
-              className='w-full text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
-            />
-            <input
-              type="password"
-              placeholder='Password'
-              className='w-full text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
-            />
-            <div className='w-full flex items-center justify-between'>
-              <div className='w-full flex items-center'>
-                <input type="checkbox" className='w-4 mr-2' />
-                <p className='text-sm'>Remember me for 30 days</p>
-              </div>
-              <p className='text-sm font-medium whitespace-nowrap cursor-pointer underline unserline-offset-2'>Forget Password</p>
-            </div>
-            <div className='w-full flex flex-col my-4'>
-              <button className='w-full text-white my-2 bg-[#060606] rounded-md p-4 text-center items-center justify-center'>Log in</button>
-              <button className='w-full text-[#060606]  my-2 border-2 border-black rounded-md p-4 text-center items-center justify-center'>Signup</button>
-            </div>
-            <div className='w-full flex items-center justify-center relative py-2'>
-              <div className='w-full h-[1px] bg-black'></div>
-              <p className='text-lg absolute text-black/80 bg-[#f5f5f5] p-1'>or</p>
-            </div>
-          </div>
-          <div className='w-full flex items-center justify-center'>
-            <p className='text-sm font-normal text-[#060606] p-2'>Dont have a account? <span className='font-semibold underline underline-offset-2 cursor-pointer'>Sign up for free!</span></p>
-          </div>
-        </div>
-      </div>
-
+    <div class='lg:flex lg:items-start'>
+  <div class='hidden lg:block w-1/2 h-screen relative'>
+    <img src="https://wallpapercave.com/wp/wp10344365.jpg" class='w-full h-full object-cover' />
+    <div class='absolute top-[20%] left-[10%] flex flex-col'>
+      <h1 class='text-4xl  text-white font-bold my-4'>Turn Your Ideas <br /> into reality</h1>
+      <p class='text-xl text-white font-normal'>Start for free and get attractive offers from the community</p>
     </div>
+  </div>
+  <div class='w-full lg:w-1/2 bg-[#f5f5f5] flex flex-col p-5 lg:p-20 justify-between'>
+    <h1 class='text-xl  text-[#060606] font-semibold'>Interactive brand</h1>
+
+    <div class='w-full flex flex-col'>
+      <div class='w-full flex flex-col mb-5 lg:mb-10'>
+        <h3 class='text-2xl lg:text-3xl font-semibold mb-2 '>Login</h3>
+        <p class='text-base  mb-2'>Welcome back! Please enter your details.</p>
+      </div>
+
+      <div class='w-full flex flex-col '>
+        <input
+          type="email"
+          placeholder='Email'
+          class='w-full text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
+        />
+        <input
+          type="password"
+          placeholder='Password'
+          class='w-full text-black py-2 my-2 bg-none border-black outline-none focus:outline-none'
+        />
+        <div class='w-full flex items-center justify-between'>
+          <div class='w-full flex items-center'>
+            <input type="checkbox" class='w-4 mr-2' />
+            <p class='text-base '>Remember me for 30 days</p>
+          </div>
+          <p class='text-base  font-medium whitespace-nowrap cursor-pointer underline underline-offset-2'>Forget Password</p>
+        </div>
+        <div class='w-full flex flex-col my-4'>
+          <button class='w-full text-white my-2 bg-[#060606] rounded-md p-3 lg:p-4 text-center items-center justify-center'>Log in</button>
+          <button class='w-full text-[#060606]  my-2 border-2 border-black rounded-md p-3 lg:p-4 text-center items-center justify-center'>Signup</button>
+        </div>
+        <div class='w-full flex items-center justify-center relative py-2'>
+          <div class='w-full h-[1px] bg-black'></div>
+          <p class='text-lg lg:text-xl absolute text-[#060606]/80 bg-[#f5f5f5] p-1'>or</p>
+        </div>
+        {/* <div className='w-full text-[#060606] flex my-2 mt-2 border-2 border-black rounded-md lg:p-4 text-center items-center justify-center'>
+          <img src="https://e7.pngegg.com/pngimages/937/156/png-clipart-google-logo-google-search-google-account-redes-search-engine-optimization-text.png" className='h- mr-3' />
+          Sign in with Google
+        </div> */}
+      </div>
+      <div class='w-full flex items-center justify-center'>
+        <p class='text-base  font-normal text-[#060606] p-2'>Don't have an account? <span class='font-semibold underline underline-offset-2 cursor-pointer'>Sign up for free!</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   )
 }
