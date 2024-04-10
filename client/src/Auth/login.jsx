@@ -43,11 +43,11 @@ const login = () => {
             </div>
             <div className='w-full flex items-center justify-center relative py-2'>
               <div className='w-full h-[1px] bg-black'></div>
-              <p className='text-lg absolute text-black/80 bg-[#f5f5f5] p-2'>or</p>
+              <p className='text-lg absolute text-black/80 bg-[#f5f5f5] p-1'>or</p>
             </div>
           </div>
           <div className='w-full flex items-center justify-center'>
-            <p className='text-sm font-normal text-[#060606]'>Dont have a account? <span className='font-semibold underline under'></span></p>
+            <p className='text-sm font-normal text-[#060606] p-2'>Dont have a account? <span className='font-semibold underline underline-offset-2 cursor-pointer'>Sign up for free!</span></p>
           </div>
         </div>
       </div>
