@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 const login = () => {
   return (
     <div class='lg:flex lg:items-start'>
@@ -39,7 +39,8 @@ const login = () => {
             </div>
             <div class='w-full flex flex-col my-4'>
               <button class='w-full text-white my-2 bg-[#060606] rounded-md p-3 lg:p-4 text-center items-center justify-center'>Log in</button>
-              <button class='w-full text-[#060606]  my-2 border-2 border-black rounded-md p-3 lg:p-4 text-center items-center justify-center'>Register</button>
+              {/* <button class='w-full text-[#060606]  my-2 border-2 border-black rounded-md p-3 lg:p-4 text-center items-center justify-center'>Register</button> */}
+              <Link className='w-full text-[#060606]  my-2 border-2 border-black rounded-md p-3 lg:p-4 text-center items-center justify-center' to={"/"}>Register Now</Link>
             </div>
             <div class='w-full flex items-center justify-center relative py-2'>
               <div class='w-full h-[1px] bg-black mt-6'></div>
@@ -51,7 +52,7 @@ const login = () => {
         </div> */}
           </div>
           <div class='w-full flex items-center justify-center mt-8'>
-            <p class='text-base  font-normal text-[#060606] p-2'>Don't have an account? <span class='font-semibold underline underline-offset-2 cursor-pointer'>Sign up for free!</span></p>
+            <p class='text-base  font-normal text-[#060606] p-2'>Don't have an account? <a href="/" class='font-semibold underline underline-offset-2 cursor-pointer'>Sign up for free!</a></p>
           </div>
         </div>
       </div>
