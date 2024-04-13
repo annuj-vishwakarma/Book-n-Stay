@@ -1,10 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const Register = () => {
- 
 
-
-  return (
+   return (
     <div class='lg:flex lg:items-start'>
     <div class='hidden lg:block w-1/2 h-screen relative'>
       <img src="https://wallpapercave.com/wp/wp10344365.jpg" class='w-full h-full object-cover' />
@@ -22,42 +20,47 @@ const Register = () => {
           <p class='text-base lg:text-lg mb-2'>Please fill in your information to register.</p>
         </div>
   
-        <div class='w-full flex flex-col'>
-          <input
-            type="email"
-            id="email"
-            placeholder='Email'
-            class='w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none'
-          />
-          <input
-            type="password"
-            id="password"
-            placeholder='Password'
-            class='w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none'
-          />
-          <input
-            type="password"
-            id="confirmPassword"
-            placeholder='Confirm Password'
-            class='w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none'
-          />
-          <select id="role" class="w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none">
-            <option value="" disabled selected>Select Role</option>
-            <option value="client">Client</option>
-            <option value="user">User</option>
-          </select>
-          <div class='w-full flex flex-col my-4'>
-            <button type="button" onclick="registerUser()" class='w-full text-white my-2 bg-[#060606] rounded-md p-3 lg:p-4 text-center items-center justify-center'>Register</button>
+        <form id="registerForm">
+          <div class='w-full flex flex-col'>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder='Email'
+              class='w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none'
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder='Password'
+              class='w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none'
+            />
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder='Confirm Password'
+              class='w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none'
+            />
+            <select id="role" name="role" class="w-full text-black p-2 py-2 my-2 bg-none border-black outline-none focus:outline-none">
+              <option value="" disabled selected>Select Role</option>
+              <option value="client">Client</option>
+              <option value="user">User</option>
+            </select>
+            <div class='w-full flex flex-col my-4'>
+              <button type="button" onclick="registerUser()" class='w-full text-white my-2 bg-[#060606] rounded-md p-3 lg:p-4 text-center items-center justify-center'>Register</button>
+            </div>
           </div>
-        </div>
+        </form>
         <div class='w-full flex items-center justify-center'>
           <p class='text-base lg:text-lg font-normal text-[#060606] p-2'>Already have an account? <a href="/Login" onclick="redirectToLogin()" class='font-semibold underline underline-offset-2 cursor-pointer'>Log in here!</a></p>
         </div>
       </div>
     </div>
   </div>
-
   
+
   )
 }
 
